@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <link rel="stylesheet" href="diagram.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="title">
+      <p>Haz clic en un grupo para expandir/contraer sus técnicas.</p>
+    </div>
+
+    <div class="controls">
+      <label for="estadoSelect">Filtrar por Estado:</label>
+      <select id="estadoSelect"></select>
+
+      <button id="resetBtn" type="button" title="Restablecer filtro y colapsos">Reset</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="chart"></div>
+  </main>
+
+  <!-- D3 -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="diagram.js"></script>
+</body>
+</html>
